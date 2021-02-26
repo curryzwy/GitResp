@@ -14,6 +14,14 @@ public class Test {
         } catch (ArithmeticException e) {
             System.out.println("程序出现异常，变量j不能为0");
         }
+
+        int a = 1;
+        int b = 0;
+        try {
+            System.out.println(a/b);
+        } catch (Exception e) {
+            e.printStackTrace();  //输出错误的栈信息
+        }
     }
 
 }
