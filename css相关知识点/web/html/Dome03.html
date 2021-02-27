@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3种选择器</title>
+
+<!--    选择器优先级：id选择器 > 类选择器 > 标签选择器  -->
+
+    <style>
+        <!--    标签选择器 (会选中所有相同的标签) -->
+        h1{
+            color: red;
+        }
+        <!--    类选择器 (选中所有class属性一直的标签)   -->
+        .curryzwy{
+            color: aqua;
+        }
+        <!--    id选择器 (全局唯一)   -->
+        #currylhj{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="curryzwy">java</h1>
+    <h1 id="currylhj">python</h1>
+    <h1>c++</h1>
+    <p>勿忘心安</p>
+</body>
+</html>
