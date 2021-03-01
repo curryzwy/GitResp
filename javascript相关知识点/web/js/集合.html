@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>集合</title>
+    <script>
+<!--   ES6后才有的Map,Set  -->
+        /*
+            集合Map用法
+            set(key,value):用来添加或者元素到Map集合
+            get(key):使用于key来获取value的值
+            delete(key)：删除这一key,value
+            size用来获取集合的大小
+            has(key)：用来检测集合中是否存在该元素
+            clear()：消除集合中的元素
+         */
+        let names = new Map();
+        names.set('1','curryzwy');
+        names.set('2','tom');
+        names.set('3','tony');
+
+        alert(names.get('3'));
+
+        console.log(names.delete('2'));
+
+        console.log(names.size);
+
+        console.log(names.has('1'));
+
+        console.log(names.clear());
+
+        /*
+            集合Set用法
+            add(key)：用于添加元素到集合中
+            clear()：用来清屏
+            delete(key)：删除该元素
+            size：用来查看集合的大小
+            has(key)：用于检测该元素是否存在集合中
+         */
+         let emails = new Set();
+         emails.add('@qq.com');
+         emails.add('@12306');
+         emails.add('@10086');
+
+         emails.clear();
+
+        emails.add('@qq.com');
+        emails.add('@12306');
+        emails.add('@10086');
+
+        emails.delete('@qq.com');
+
+        emails.size;
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js数组</title>
+    <script>
+        'use strict';
+        let arrays = [1,2,3,4,7,5,6,8,9];
+
+        // length：数组的长度
+        console.log(arrays.length);
+
+        // slice(a,b)：截取a到b之间的字符串，包括a不包括b
+        console.log(arrays.slice(2,6));
+
+        // pop()：把数组的最后一个取出
+        console.log(arrays.pop());
+
+        // push()：压入数组尾部
+        arrays.push(0,11);
+        console.log(arrays.length);
+
+        // indexOf(n)：返回n在数组中第一次出现的数组下标
+        console.log(arrays.indexOf(8));
+
+        // reverse()：把数组反转
+        console.log(arrays.reverse());
+
+        // sort()：排序(升序)
+        console.log(arrays.sort());
+
+        // unshift：往数组头压入元素
+        console.log(arrays.unshift(12));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
