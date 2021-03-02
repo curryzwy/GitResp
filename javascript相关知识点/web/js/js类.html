@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js类</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(name,stuNo) {
+                this.name = name;
+                this.stuNo = stuNo;
+            }
+            hello(){
+                console.log("你好");
+            }
+        }
+        //xiaoStudent继承Student类
+        class xiaoStudent extends Student{
+            constructor(name,stuNo,score) {
+                super(name,stuNo);
+                this.score = score;
+            }
+        }
+        let stud = new Student();
+        stud.hello();
+        stud.name = 'xiaoming';
+        stud.stuNo = '181001';
+
+        let stud1 = new xiaoStudent('xiaoxuesheng','10086',10);
+        console.log(stud1.score);
+        console.log(stud1.stuNo);
+        console.log(stud1.name);
+        console.log(stud1.hello());
+    </script>
+</body>
+</html>

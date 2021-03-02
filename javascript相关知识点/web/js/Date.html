@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+</head>
+<body>
+    <script>
+        <!-- Date相关方法  -->
+        /*
+            getFullYear()：表示当前年份
+            getMonth()：表示当前月份-1（因为外国人用的是0-11月，我们用的是1-12月）
+            getDay()：表示当前日
+            getDate()：表示当前星期几
+            getHours()：表示当前几点
+            getMinutes()：表示当前几分
+            getSeconds()：表示当前几秒
+            getTime()：获取时间戳 即1970.1.1 0:00:00到现在走了多少秒
+            getMillisecond()：根据本地时间返回指定日期的毫秒数
+         */
+        let now = new Date();
+        console.log(now.getFullYear());
+        console.log(now.getMonth());
+        console.log(now.getDay());
+        console.log(now.getDate());
+        console.log(now.getHours());
+        console.log(now.getMinutes());
+        console.log(now.getSeconds());
+        console.log(now.getTime());
+        console.log(now.getMilliseconds());
+    </script>
+</body>
+</html>

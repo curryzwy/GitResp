@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM相关操作</title>
+</head>
+<body>
+    <div id="div">
+        <h2>标题</h2>
+        <p id="zwy">curryzwy</p>
+        <p class="lhj">currylhj</p>
+    </div>
+    <script>
+        let div = document.getElementById("div");
+        let stu = document.getElementsByClassName("lhj");
+        let stu1 = document.getElementsByTagName("h2");
+        /*
+            更新节点innerText
+         */
+        stu.innerText = '您好！';
+    </script>
+</body>
+</html>
